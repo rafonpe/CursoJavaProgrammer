@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Ricardo
+ *
+ */
+module calcularSalarioProfessor {
+}
