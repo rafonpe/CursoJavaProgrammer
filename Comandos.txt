@@ -1,0 +1,50 @@
+#################
+# COMANDOS JAVA #
+#################
+
+java -version = verificar vers~ao do java
+javac Principal.java = compila o Principal.java
+java Principal = executa o arquivo chamado Principal
+
+####################
+# COMANDOS ECLIPSE #
+####################
+
+F8 - Vai para o próximo breakpoint, se nenhum for encontrado, o programa seguirá seu fluxo de execução normal.
+Você também pode usar os botões que estão presentes na aba Debug.
+
+F5 - Vai para o próximo passo do seu programa. Se for um método, ele entrará no código associado.
+
+F6 - Percorre o seu codigo java linha por linha (Não entra no código nativo do Java).
+
+F11 - Executa tudo de uma vez.
+
+Ctrl + barra de espaço = completa o objeto com os seus atributos e métodos.
+
+
+################
+# COMANDOS GIT #
+################
+
+cd na pasta onde vc vai colocar os arquivos localmente.
+
+git clone "repositorio que quer clonar"
+git status = verifica as alteracoes que foram realizadas.
+             Se tiver em vermelho nao esta na fila para subir os arquivos para a nuvem do git hub.
+             Se estiver verde quer dizer que os arquivos estao na fila para subir na nuvem do git hub.
+
+git add . = Adiciona todos os arquivos que sofreram alteração na fila para serem enviados para a nuvem.
+
+git commit -m "comentario" = Adiciona um comentario para enviar ao git.
+
+(precisa dizer ao git quem é vc)
+
+git config --global user.email rafonpe35@gmail.com (configurar meu e-mail no git).
+
+git push = enviar todos os arquivos que estao na fila para a nuvem.
+
+
+
+
+
+
