@@ -108,12 +108,6 @@ public class principal {
 			System.out.println("O salário bonus do professor Senior é: " + proJunior.salarioBonus);
 		}
 		
-		//######################
-		//IMPRIMIR SALÁRIO BONUS 
-		//######################
-		
-
-		
 		entradaDados.close();
 	}
 
