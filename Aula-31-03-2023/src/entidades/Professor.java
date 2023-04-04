@@ -8,6 +8,7 @@ public class Professor {
 	public double salarioLiquido;
 	public int qtdHorasTrabalhadas;
 	public double valorHorasTrabalhadas;
+	public double salarioBonus;
 	
 	
 	

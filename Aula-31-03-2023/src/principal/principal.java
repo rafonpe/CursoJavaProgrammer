@@ -86,12 +86,35 @@ public class principal {
 		
 		System.out.println("O salário do professor Senior é: " + proSenior.salario);
 		System.out.println("O salário liquido do professor Senior é: " + proSenior.salarioLiquido);
+		if (proSenior.qtdHorasTrabalhadas > 500) {
+			
+			proSenior.salarioBonus = seSalarioServico.calcularSalBonus(proSenior.salario);
+			System.out.println("O salário bonus do professor Senior é: " + proSenior.salarioBonus);
+		}
 		
 		System.out.println("O salário do professor Pleno é: " + proPleno.salario);
-		System.out.println("O salário liquido do professor Penior é: " + proPleno.salarioLiquido);
+		System.out.println("O salário liquido do professor Pleno é: " + proPleno.salarioLiquido);
+		if (proPleno.qtdHorasTrabalhadas > 500) {
+			
+			proPleno.salarioBonus = seSalarioServico.calcularSalBonus(proPleno.salario);
+			System.out.println("O salário bonus do professor Senior é: " + proPleno.salarioBonus);
+		}
 		
 		System.out.println("O salário do professor Junior é: " + proJunior.salario);
 		System.out.println("O salário liquido do professor Junior é: " + proJunior.salarioLiquido);
+		if (proJunior.qtdHorasTrabalhadas > 500) {
+			
+			proJunior.salarioBonus = seSalarioServico.calcularSalBonus(proJunior.salario);
+			System.out.println("O salário bonus do professor Senior é: " + proJunior.salarioBonus);
+		}
+		
+		//######################
+		//IMPRIMIR SALÁRIO BONUS 
+		//######################
+		
+
+		
+		entradaDados.close();
 	}
 
 }

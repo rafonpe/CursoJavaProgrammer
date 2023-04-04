@@ -21,5 +21,14 @@ public class SalarioServico {
 		
 		return salLiquido;
 	}
+	
+	//Calcula o salario com bonus	
+	public double calcularSalBonus(double salBruto) {
+		
+		double salBonus;
+		salBonus = salBruto + ((salBruto * 25)/100);
+		return salBonus;
+		
+	}
 
 }
