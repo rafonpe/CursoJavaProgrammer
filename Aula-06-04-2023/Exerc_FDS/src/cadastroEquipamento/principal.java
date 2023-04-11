@@ -15,7 +15,6 @@ public class principal {
 		int escolha;
 		double lucro;
 		CadastroProdutoTela caProdutoTela = new CadastroProdutoTela();
-		servico seLucro = new servico();
 		equipamento equipamentoVazio = new equipamento();
 		equipamento equipamentoPreenchido = new equipamento();
 		equipamentoPreenchido = caProdutoTela.cadastrarEquipamento(equipamentoVazio);
@@ -28,6 +27,7 @@ public class principal {
 		furadeira furadeiraPreenchida = new furadeira();
 		furadeiraPreenchida = caProdutoTela.cadastrarFuradeira(furadeiraVazia);
 		caProdutoTela.mostrarFuradeira(furadeiraPreenchida);
+		servico seLucro = new servico();
 		lucro = seLucro.calcularLucro(furadeiraPreenchida.getprecoDeCompra(), furadeiraPreenchida.getprecoDeVenda());
 		JOptionPane.showMessageDialog(null, "Lucro recebido: " + lucro);
 		
@@ -40,6 +40,7 @@ public class principal {
 		makita makitaPreenchida = new makita();
 		makitaPreenchida = caProdutoTela.cadastrarMakita(makitaVazia);
 		caProdutoTela.mostrarMakita(makitaPreenchida);
+		servico seLucro = new servico();
 		lucro = seLucro.calcularLucro(makitaPreenchida.getprecoDeCompra(), makitaPreenchida.getprecoDeVenda());
 		JOptionPane.showMessageDialog(null, "Lucro recebido: " + lucro);
 		
