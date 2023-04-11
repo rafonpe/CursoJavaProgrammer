@@ -9,25 +9,17 @@ import entidades.makita;
 public class CadastroProdutoTela {
 	
 	
-	// Tela da classe equipamento
+	// Método para cadastrar a opção
 	
 	
-	public equipamento cadastrarEquipamento(equipamento equipamentoParametro) {
+	public int cadastrarOpcao() {
 		
-		equipamentoParametro.setTipo(Integer.parseInt(JOptionPane.showInputDialog("Digite 1 para furadeira ou 2 para makita: ")));
-		return equipamentoParametro;
+	    int opcao = (Integer.parseInt(JOptionPane.showInputDialog("Digite 1 para furadeira ou 2 para makita: ")));
+		return opcao;
 		
 	}
 	
-	/*
-	public void mostrarEquipamento(equipamento equipamentoParametro) {
-		
-		JOptionPane.showMessageDialog(null, equipamentoParametro.getTipo());
-		
-	} 
-	*/
-	
-	
+
 	// Tela da classe furadeira
 	
 
