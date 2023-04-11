@@ -2,6 +2,7 @@ package entidades;
 
 public class equipamento {
 	
+	 private int tipo;
 	 private String codigo;
 	 private String marca;
 	 private Double precoDeCompra;
@@ -46,6 +47,15 @@ public class equipamento {
 
 	public void setlucro(Double lucro) {
 		this.lucro = lucro;
+	}
+	
+	
+	public int getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
 	}
 
 }

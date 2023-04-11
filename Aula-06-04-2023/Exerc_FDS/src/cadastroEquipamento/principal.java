@@ -12,29 +12,39 @@ public class principal {
 
 	public static void main(String[] args) {
 		
+		int escolha;
 		double lucro;
-
-
-		// Declara e inicializa o objeto do Tipo equipamento que vai ser enviado para o metodo
-		equipamento equipamentoEnviadoMetodo = new equipamento();
-		
-		// Declara e inicializa o objeto do Tipo equipamento que vai receber o resultado metodo
-		equipamento equipamentoRecebidoMetodo = new equipamento();
-		
-		// Declara e iniciliza o objeto CadastroProdutoTela
 		CadastroProdutoTela caProdutoTela = new CadastroProdutoTela();
-		
-		// Cadastrar e mostrar o equipamento 
-		equipamentoRecebidoMetodo = caProdutoTela.cadastrarEquipamento(equipamentoEnviadoMetodo);
-		caProdutoTela.mostrarEquipamento(equipamentoRecebidoMetodo);
-		
-		// Declara e inicializa o objeto servico
 		servico seLucro = new servico();
-		lucro = seLucro.calcularLucro(equipamentoRecebidoMetodo.getprecoDeCompra(), equipamentoRecebidoMetodo.getprecoDeVenda());
+		equipamento equipamentoVazio = new equipamento();
+		equipamento equipamentoPreenchido = new equipamento();
+		equipamentoPreenchido = caProdutoTela.cadastrarEquipamento(equipamentoVazio);
+		escolha = equipamentoPreenchido.getTipo();
+	
+		if (escolha == 1) {
+		
+		// Caso o produto selecionado for furadeira
+		furadeira furadeiraVazia = new furadeira();
+		furadeira furadeiraPreenchida = new furadeira();
+		furadeiraPreenchida = caProdutoTela.cadastrarFuradeira(furadeiraVazia);
+		caProdutoTela.mostrarFuradeira(furadeiraPreenchida);
+		lucro = seLucro.calcularLucro(furadeiraPreenchida.getprecoDeCompra(), furadeiraPreenchida.getprecoDeVenda());
 		JOptionPane.showMessageDialog(null, "Lucro recebido: " + lucro);
 		
+		}
 		
+		if (escolha == 2) {
 		
+		// Caso o produto selecionado for makita
+		makita makitaVazia = new makita();
+		makita makitaPreenchida = new makita();
+		makitaPreenchida = caProdutoTela.cadastrarMakita(makitaVazia);
+		caProdutoTela.mostrarMakita(makitaPreenchida);
+		lucro = seLucro.calcularLucro(makitaPreenchida.getprecoDeCompra(), makitaPreenchida.getprecoDeVenda());
+		JOptionPane.showMessageDialog(null, "Lucro recebido: " + lucro);
+		
+		}
+
 		
 
 	}
