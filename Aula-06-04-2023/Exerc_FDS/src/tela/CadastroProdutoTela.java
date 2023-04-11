@@ -2,7 +2,7 @@ package tela;
 
 import javax.swing.JOptionPane;
 
-import entidades.equipamento;
+//import entidades.equipamento;
 import entidades.furadeira;
 import entidades.makita;
 
@@ -12,7 +12,7 @@ public class CadastroProdutoTela {
 	// Método para cadastrar a opção
 	
 	
-	public int cadastrarOpcao() {
+	public int menu() {
 		
 	    int opcao = (Integer.parseInt(JOptionPane.showInputDialog("Digite 1 para furadeira ou 2 para makita: ")));
 		return opcao;

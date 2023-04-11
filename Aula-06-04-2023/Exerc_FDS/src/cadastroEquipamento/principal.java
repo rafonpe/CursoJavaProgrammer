@@ -15,11 +15,12 @@ public class principal {
 		int escolha;
 		double lucro;
 		CadastroProdutoTela caProdutoTela = new CadastroProdutoTela();
-		escolha = caProdutoTela.cadastrarOpcao();
+		escolha = caProdutoTela.menu();
 	
 		if (escolha == 1) {
 		
 			// Caso o produto selecionado for furadeira
+			
 			furadeira furadeiraVazia = new furadeira();
 			furadeira furadeiraPreenchida = new furadeira();
 			furadeiraPreenchida = caProdutoTela.cadastrarFuradeira(furadeiraVazia);
